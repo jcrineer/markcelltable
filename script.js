@@ -88,8 +88,10 @@ function rightClick(){
 
 	move = select.slice(0,2) + dir;
 
-	document.getElementById(select).style.border = "solid black 1px";
-	document.getElementById(move).style.border = "solid black 3px";
+	document.getElementById(select).style.fontWeight = "normal";
+	document.getElementById(select).style.border = "solid gray 1px";
+	document.getElementById(move).style.border = "solid black 2px";
+	document.getElementById(move).style.fontWeight = "bold";
 	select = move;
 }
 
@@ -107,9 +109,10 @@ function leftClick(){
 
 	move = select.slice(0,2) + dir;
 
-	document.getElementById(select).style.border = "solid black 1px";
-
-	document.getElementById(move).style.border = "solid black 3px";
+	document.getElementById(select).style.fontWeight = "normal";
+	document.getElementById(select).style.border = "solid gray 1px";
+	document.getElementById(move).style.border = "solid black 2px";
+	document.getElementById(move).style.fontWeight = "bold";
 	select = move;
 }
 
@@ -126,9 +129,10 @@ function upClick(){
 		return;
 	}
 
-	document.getElementById(select).style.border = "solid black 1px";
-
-	document.getElementById(move).style.border = "solid black 3px";
+	document.getElementById(select).style.fontWeight = "normal";
+	document.getElementById(select).style.border = "solid gray 1px";
+	document.getElementById(move).style.border = "solid black 2px";
+	document.getElementById(move).style.fontWeight = "bold";
 	select = move;
 }
 
@@ -145,10 +149,10 @@ function downClick(){
 		return;
 	}
 	
-
-	document.getElementById(select).style.border = "solid black 1px";
-
-	document.getElementById(move).style.border = "solid black 3px";
+	document.getElementById(select).style.fontWeight = "normal";
+	document.getElementById(select).style.border = "solid gray 1px";
+	document.getElementById(move).style.border = "solid black 2px";
+	document.getElementById(move).style.fontWeight = "bold";
 	select = move;
 }
 
@@ -162,7 +166,7 @@ function markCell(){
 
 // CREATE TABLE
 body.appendChild(fourByFourTable);
-fourByFourTable.style.border = "solid black 1px";
+fourByFourTable.style.border = "solid gray 1px";
 fourByFourTable.style.tableLayout = "fixed"
 fourByFourTable.style.width = "400px"
 fourByFourTable.style.height = "150px"
@@ -193,47 +197,47 @@ fourByFourTable.appendChild(tableBody);
 // ROW ONE
 tableBody.appendChild(rowOne);
 rowOne.appendChild(oneOne);
-oneOne.style.border = "solid black 1px";
+oneOne.style.border = "solid gray 1px";
 oneOne.textContent += "1,1";
 rowOne.appendChild(oneTwo);
-oneTwo.style.border = "solid black 1px";
+oneTwo.style.border = "solid gray 1px";
 oneTwo.textContent += "1,2";
 rowOne.appendChild(oneThree);
-oneThree.style.border = "solid black 1px";
+oneThree.style.border = "solid gray 1px";
 oneThree.textContent += "1,3";
 rowOne.appendChild(oneFour);
-oneFour.style.border = "solid black 1px";
+oneFour.style.border = "solid gray 1px";
 oneFour.textContent += "1,4";
 
 // ROW TWO
 tableBody.appendChild(rowTwo);
 rowTwo.appendChild(twoOne);
-twoOne.style.border = "solid black 1px";
+twoOne.style.border = "solid gray 1px";
 twoOne.textContent += "2,1";
 rowTwo.appendChild(twoTwo);
-twoTwo.style.border = "solid black 1px";
+twoTwo.style.border = "solid gray 1px";
 twoTwo.textContent += "2,2";
 rowTwo.appendChild(twoThree);
-twoThree.style.border = "solid black 1px";
+twoThree.style.border = "solid gray 1px";
 twoThree.textContent += "2,3";
 rowTwo.appendChild(twoFour);
-twoFour.style.border = "solid black 1px";
+twoFour.style.border = "solid gray 1px";
 twoFour.textContent += "2,4";
 
 
 // ROW THREE
 tableBody.appendChild(rowThree);
 rowThree.appendChild(threeOne);
-threeOne.style.border = "solid black 1px";
+threeOne.style.border = "solid gray 1px";
 threeOne.textContent += "3,1";
 rowThree.appendChild(threeTwo);
-threeTwo.style.border = "solid black 1px";
+threeTwo.style.border = "solid gray 1px";
 threeTwo.textContent += "3,2";
 rowThree.appendChild(threeThree);
-threeThree.style.border = "solid black 1px";
+threeThree.style.border = "solid gray 1px";
 threeThree.textContent += "3,3";
 rowThree.appendChild(threeFour);
-threeFour.style.border = "solid black 1px";
+threeFour.style.border = "solid gray 1px";
 threeFour.textContent += "3,4";
 
 
@@ -257,15 +261,13 @@ buttonBox.appendChild(buttonDown);
 buttonDown.appendChild(document.createTextNode("DOWN"));
 
 
-
-
 // MARK CELL
 
 body.appendChild(buttonMarkCell);
 buttonMarkCell.appendChild(document.createTextNode("MARK CELL"));
 
-
-document.getElementById(select).style.border = "solid black 3px";
+document.getElementById(select).style.fontWeight = "bold";
+document.getElementById(select).style.border = "solid black 2px";
 
 
 document.getElementById("right").addEventListener("click",rightClick);
